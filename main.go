@@ -1,17 +1,20 @@
 package main
 
-import "fmt"
+import(
+	"fmt"
+	"github.com/go-programming/code_samples/010-ninja-level-thirteen/01/finished/dog"
+)
+
+type canine struct {
+	 name string
+	 age int
+}
 
 func main() {
-	x := 42
-	fmt.Println(x)
-	x = 99
-	fmt.Println(x)
-	y := 100 + 70
-	fmt.Println(y)
-	z := "Bond, James"
-	fmt.Println(z)
-	q := "You are doing great!"
-	fmt.Println(q)
-
-}
+	fido := canine{
+		name: "fido",
+		age:  dog.Years(5),
+	}
+		fmt.Println(fido)
+		fmt.Println(dog.YearsTwo(18))
+	}
